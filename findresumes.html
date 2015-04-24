@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
+Version: 3.6.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
@@ -27,6 +40,11 @@
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
+<style>
+	.page-content {
+		min-height:580px !important;
+	}
+</style>
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
@@ -55,24 +73,17 @@
         <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav sm" >
-              <li ><a href="index.html">Find Resumes</a></li>
-              <li class="active"><a href="recruiters.html">Recruiters / Post Your Hot List</a></li>
+              <li class="active"><a href="index.html">Find Resumes</a></li>
+              <li><a href="recruiters.html">Recruiters / Post Your Hot List</a></li>
                              
             </ul>
             <!-- Right nav -->
-            <ul class="nav navbar-nav navbar-right sm" >
+            <ul class="nav navbar-nav navbar-right sm">
               
-			    <li class="dropdown active">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu" style="box-shadow:none">
-					
-					<li> <a href="#">MyProfile</a> </li>
-					<li> <a href="index.html">Logout</a> </li>
-				  </ul>
-				</li>
+			  <li><a href="login.html">Sign In</a></li>
                           
             </ul>
-          <!-- login -->
+          
         </div><!--/.nav-collapse -->
     </div><!--/.container -->
 </div>
@@ -86,105 +97,78 @@
 		<div class="col-sm-12">
 			<div style="height:70px"></div>
 			<div class="row">
-				<div class="col-sm-1"></div>
-				<div class="col-sm-8">
+				<div class="col-sm-2">
 					<img src="assets/img/logo.png" style="width:200px"></img>
+				</div>
+				<div class="col-sm-8">
+					<div class="col-sm-5" style="padding:0 0">
+						<div class="form-group">
+							<label for="skills" class="col-sm-12 control-label" style="font-size:12px">What</label>
+							<div class="col-sm-12">
+								<input class="form-control"  placeholder="Skills" style="font-size:12px;height:27px">
+							</div>
+						</div>
+					</div>
+						
+					<div class="col-sm-5" style="padding:0 0">
+						<div class="form-group">
+							<label for="location" class="col-sm-12 control-label" style="font-size:12px">Where</label>
+							<div class="col-sm-12">
+								<input class="form-control"  placeholder="Location" style="font-size:12px;height:27px">
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-2" style="margin:22px 0">
+						<button class="btn btn-primary btn-md" style="font-size:11px"> Find Resumes </button>
+						
+					</div>
 				</div>
 				<div class="col-sm-2"></div>
 			</div>
 			
-			<div style="height:25px"></div>
-			
+						
 			<div class="row">
 				<div class="col-sm-2" ></div>
 				<div class="col-sm-8">
-					<h4> <span> Post a Job Details </span> </h4>
-					<hr/>
-					<div class="col-sm-12">
-						<div class="col-sm-0"></div>
-						<div class="col-sm-12">
-							<form class="form-horizontal">
-							  <div class="form-group">
-								<label for="inputEmail3" class="col-sm-3 control-label">Company</label>
-								<div class="col-sm-9">
-								  <input type="text" class="form-control" id="inputEmail3" placeholder="Company">
+					
+					<div class="portlet box ">
+						
+						<div class="portlet-body">
+							<div class="row">
+								<div class="col-md-10" style="padding:0 20px 0 20px">
+									<div class="col-md-12" style="border:1px solid;border-color:#e5e5e5;margin:0 0 10px 0">
+										<a href="#"><h4 style="color:#44b6ae"><span> Java Developer </span></h4></a>
+										<h6><span> Softmound Technologies </span></h6>
+										<h6><span> 3 Years of Experience </span></h6>
+										<h6><span> Java / J2EE </span></h6>
+										
+									</div>
+									<div class="col-md-12" style="border:1px solid;border-color:#e5e5e5;margin:0 0 10px 0">
+										<a href="#"><h4 style="color:#44b6ae"><span> Java Developer </span></h4></a>
+										<h6><span> Enterprise Technologies </span></h6>
+										<h6><span> 1 Years of Experience Pvt Ltd </span></h6>
+										<h6><span> Java / J2EE </span></h6>
+										
+									</div>
+									<div class="col-md-12" style="border:1px solid;border-color:#e5e5e5;margin:0 0 10px 0">
+										<a href="#"><h4 style="color:#44b6ae"><span> Java Developer </span></h4></a>
+										<h6><span> Glorious Technologies </span></h6>
+										<h6><span> 5 Years of Experience </span></h6>
+										<h6><span> Java / J2EE </span></h6>
+										
+									</div>
+									
+																											
 								</div>
-							  </div>
-							  <div class="form-group">
-								<label for="inputPassword3" class="col-sm-3 control-label">Job Title</label>
-								<div class="col-sm-9">
-								  <input type="text" class="form-control" id="inputPassword3" placeholder="Job Title">
-								</div>
-							  </div>
-							  <div class="form-group">
-								<label for="inputPassword3" class="col-sm-3 control-label">Category</label>
-								<div class="col-sm-9">
-								  <select class="form-control" name="job-category">
-									<option value="-1">Select job category</option>
-                                        <option value="0">Driver</option>
-                                        <option value="1">Maid/Housekeeping</option>
-                                        <option value="2">Cook</option>
-                                        <option value="3">Aayah/Child Caretaker</option>
-                                        <option value="4">Gardener</option>
-                                        <option value="5">Security/Guard</option>
-                                        <option value="6">Construction/Laborer</option>
-                                        <option value="7">Garment Tailor/Textile</option>
-                                        <option value="8">Office Helper</option>
-                                        <option value="9">Delivery/Collection Logistics</option>
-                                        <option value="10">Receptionist/Front Office</option>
-                                        <option value="12">Maid Who Can Cook</option>
-                                        <option value="13">Data Entry/Back Office</option>
-                                        <option value="14">Cashier/Retail</option>
-                                        <option value="15">Nurse/Healthcare</option>
-                                        <option value="16">IT Software/Hardware</option>
-                                        <option value="17">Machinist/ITI Trades</option>
-                                        <option value="18">Sales/Marketing</option>
-                                        <option value="19">BPO/Call Center</option>
-                                        <option value="20">Management</option>
-                                        <option value="21">Teacher/Trainer</option>
-                                        <option value="22">Finance/Accounts</option>
-                                        <option value="23">Engineering</option>
-                                        <option value="24">Beautician/Salon</option>
-                                        <option value="25">Steward/Hospitality</option>
-
-								  </select>
-								</div>
-							  </div>
-							  <div class="form-group">
-								<label for="inputPassword3" class="col-sm-3 control-label">Job Description</label>
-								<div class="col-sm-9">
-								  <textarea class="form-control" id="inputPassword3" placeholder="Job Description"></textarea>
-								</div>
-							  </div>
-							  <div class="form-group">
-								<label for="inputEmail3" class="col-sm-3 control-label">Location</label>
-								<div class="col-sm-3">
-								  <input type="text" class="form-control" id="inputEmail3" placeholder="Country">
-								</div>
-								<div class="col-sm-3">
-								  <input type="text" class="form-control" id="inputEmail3" placeholder="State">
-								</div>
-								<div class="col-sm-3">
-								  <input class="form-control" id="inputPassword3" placeholder="ZipCode">
-								</div>
-							  </div>
-							  <!-- <div class="form-group">
-								<label for="inputPassword3" class="col-sm-3 control-label">ZipCode</label>
-								<div class="col-sm-9">
-								  <input class="form-control" id="inputPassword3" placeholder="ZipCode">
-								</div>
-							  </div> -->
-							  <div class="form-group">
-								<div class="col-sm-offset-3 col-sm-9">
-								  <button type="submit" id="postjob" class="btn btn-primary">Post a Job</button>
-								  <button type="submit" class="btn btn-default pull-right">Cancel</button>
-								</div>
-							  </div>
-							</form>
+												
+							</div>
+							
 						</div>
-						<div class="col-sm-0"></div>
+						
 					</div>
 				</div>
+				
 				
 				<div class="col-sm-2"></div>
 			</div>
@@ -199,7 +183,7 @@
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2015 &copy; HotList.
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -236,13 +220,6 @@ QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
       });
    </script>
-  <script>
-$(document).ready(function(){
-	$('#postjob').click(function(){
-		window.location.replace("recruiters.html");
-	});
-});
-</script>
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
