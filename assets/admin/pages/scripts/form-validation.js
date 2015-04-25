@@ -51,6 +51,30 @@ var FormValidation = function () {
                     select: {
                         required: true
                     },
+					jobtitle: {
+						required: true
+					},
+					skills: {
+						required: true
+					},
+					city:{
+						required:true
+					},
+					state: {
+						required: true
+					},
+					country: {
+						required: true
+					},
+					duration: {
+						required: true
+					},
+					jobdesc: {
+						required: true
+					},
+					suitablejobtitle: {
+						required: true
+					},
                     select_multi: {
                         required: true,
                         minlength: 1,
