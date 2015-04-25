@@ -1,18 +1,5 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
-Version: 3.6.2
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
+
 <html lang="en">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
@@ -40,33 +27,57 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-<style>
+ <style>
 	.page-content {
 		min-height:588px !important;
 	}
-</style>
+</style> 
 </head>
-<!-- END HEAD -->
-<!-- BEGIN BODY -->
-<!-- DOC: Apply "page-header-fixed-mobile" and "page-footer-fixed-mobile" class to body element to force fixed header or footer in mobile devices -->
-<!-- DOC: Apply "page-sidebar-closed" class to the body and "page-sidebar-menu-closed" class to the sidebar menu element to hide the sidebar by default -->
-<!-- DOC: Apply "page-sidebar-hide" class to the body to make the sidebar completely hidden on toggle -->
-<!-- DOC: Apply "page-sidebar-closed-hide-logo" class to the body element to make the logo hidden on sidebar toggle -->
-<!-- DOC: Apply "page-sidebar-hide" class to body element to completely hide the sidebar on sidebar toggle -->
-<!-- DOC: Apply "page-sidebar-fixed" class to have fixed sidebar -->
-<!-- DOC: Apply "page-footer-fixed" class to the body element to have fixed footer -->
-<!-- DOC: Apply "page-sidebar-reversed" class to put the sidebar on the right side -->
-<!-- DOC: Apply "page-full-width" class to the body element to have full width page without the sidebar menu -->
+
 <body class="page-header-fixed page-quick-sidebar-over-content" style="background-color:white">
 <!-- BEGIN HEADER -->
-<div id="header"></div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a href="index.html"><img src="assets/img/logo.png" style="width:150px" /></a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav sm" >
+              <li ><a href="index.html">Find Resumes</a></li>
+              <li class="active"><a href="recruiters.html">Recruiters / Post Your Hot List</a></li>
+                             
+            </ul>
+            <!-- Right nav -->
+            <ul class="nav navbar-nav navbar-right sm" >
+              
+			    <li class="dropdown active">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu" style="box-shadow:none">
+					
+					<li><a href="#">MyProfile</a></li>
+					<li><a href="index.html">Logout</a></li>
+				  </ul>
+				</li>
+                          
+            </ul>
+          
+        </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div>
 
 <div class="clearfix">
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<div class="page-content">
-		
+		<div style="height:25px"></div>
 	    <div class="col-sm-12">
 			<div class="col-sm-1"></div>
 			<div class="col-sm-10" >
