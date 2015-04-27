@@ -167,6 +167,12 @@ var Login = function() {
                 city: {
                     required: true
                 },
+				state: {
+					required: true
+				},
+				phone: {
+					required: true
+				},
                 country: {
                     required: true
                 },

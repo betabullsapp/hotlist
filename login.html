@@ -107,12 +107,16 @@ License: You must have a valid license purchased only from themeforest(the above
 	</form>
 	<!-- END FORGOT PASSWORD FORM -->
 	<!-- BEGIN REGISTRATION FORM -->
-	<form class="register-form" action="index.html" method="post">
+	<form class="register-form" action="regdetails.html" method="post">
 		<h3>Sign Up</h3>
 		
 		<p class="hint">
 			 Enter your account details below:
 		</p>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Name</label>
+			<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Name" name="fullname"/>
+		</div>
 		<div class="form-group">
 			<label class="control-label visible-ie8 visible-ie9">Email</label>
 			<input class="form-control placeholder-no-fix" type="email" autocomplete="off" placeholder="Email Address" name="email"/>
@@ -124,6 +128,18 @@ License: You must have a valid license purchased only from themeforest(the above
 		<div class="form-group">
 			<label class="control-label visible-ie8 visible-ie9">Password</label>
 			<input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">City</label>
+			<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="City" name="city"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">State</label>
+			<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="State" name="state"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">PhoneNumber</label>
+			<input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="PhoneNumber" name="phone"/>
 		</div>
 		<div class="form-group margin-top-20 margin-bottom-20">
 			<label class="check">
@@ -141,6 +157,9 @@ License: You must have a valid license purchased only from themeforest(the above
 		</div>
 	</form>
 	<!-- END REGISTRATION FORM -->
+	
+	
+	
 </div>
 <div class="copyright">
 	 2015 © HotList.
@@ -179,10 +198,12 @@ Demo.init();
 <script>
 $(document).ready(function(){
 	$('#sign').click(function(){
-		window.location.replace("recruiters.html");
+		window.location.replace("rec-candidates.html");
 	});
 });
 </script>
+ 
+
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
