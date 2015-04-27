@@ -27,11 +27,7 @@
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
- <style>
-	.page-content {
-		min-height:588px !important;
-	}
-</style> 
+ 
 </head>
 
 <body class="page-header-fixed page-quick-sidebar-over-content" style="background-color:white">
@@ -76,48 +72,116 @@
 </div>
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
-	<div class="page-content">
-		<div style="height:25px"></div>
-	    <div class="col-sm-12">
-			<div class="col-sm-1"></div>
-			<div class="col-sm-10" >
-				<div class="comment-tabs">
-					<ul class="nav nav-tabs" >
-						<li><a href="recruiters.html"><img src="assets/img/logo.png" style="width:150px"/></a></li>
-						<li ><a href="rec-candidates.html" ><h4 style="font-size:15px" class="reviews text-capitalize">Candidates</h4></a></li>
-						<li class="active"><a href="recruiters.html" ><h4 style="font-size:15px" class="reviews text-capitalize">Jobs</h4></a></li>
-						
-						<ul class="nav navbar-nav navbar-right sm" >
-							<form class="navbar-form navbar-left" role="search">
-								<div class="form-group">
-								  <input type="text" class="form-control" placeholder="Search Jobs ...">
-								</div>
-								<button type="submit" class="btn btn-default">Search</button>
-							</form>
-							<!-- <form class="navbar-form navbar-left">
-								<li ><a href="postjob.html" ><h4 style="font-size:15px" class="reviews text-capitalize">Post Job</h4></a></li>
-								
-							</form> -->
-              				
-              			</ul>
-					</ul> 
-					
-					<div class="page-toolbar pull-right">
-						<a href="postjob.html"> <h4>  Post Job </h4> </a>
-					</div>
-										
-					<div class="tab-content">
-						<div class="tab-pane active" id="comments-jobs">                
-							
-						</div>
-						<div class="tab-pane" id="comments-candidates">
-							
-						</div>
-						
-					</div>
+	<div class="row" style="margin:30px 0;min-height:528px">
+		
+		<div class="col-md-12">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="page-bar">
+					<h4 class="text-center">Edit Your Details</h4>
 				</div>
+				
+				<form class="form-horizontal form-row-seperated" action="#">
+					<div class="portlet">
+						<div class="portlet-body">
+							<div class="tabbable">
+								<ul class="nav nav-tabs">
+									<li class="">
+										<img src="assets/img/logo.png" style="width:150px">
+									</li>
+									<li class="active">
+										<a href="#tab_general" data-toggle="tab" aria-expanded="true">
+										Recruiter Details </a>
+									</li>
+									<li class="">
+										<a href="#tab_meta" data-toggle="tab" aria-expanded="false">
+										Company Details </a>
+									</li>
+								</ul>
+								<div class="tab-content no-space">
+									<div class="tab-pane active" id="tab_general">
+										<div class="form-body">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<div class="form-group">
+													<label class="control-label col-md-3">Name <span class="required"> * </span> </label>
+													<div class="col-md-9">
+														<input type="text" name="name" placeholder="cherles"  class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Email <span class="required"> * </span> </label>
+													<div class="col-md-9">
+														<input type="text" name="company" placeholder="cherles@cadric.com"  class="form-control"/>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Location <span class="required"> * </span> </label>
+													<div class="col-md-4">
+														<input type="text" name="city" placeholder="Mexico"  class="form-control"/>
+													</div>
+													<div class="col-md-1"></div>
+													<div class="col-md-4">
+														<input type="text" name="state" placeholder="Mexico"  class="form-control"/>
+													</div>
+												</div>
+												
+												<div class="form-group">
+													<label class="control-label col-md-3">PhoneNumber <span class="required"> * </span> </label>
+													<div class="col-md-9">
+														<input type="text" name="name" placeholder="123-456-789"  class="form-control"/>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-1"></div>
+										</div>
+									</div>
+									<div class="tab-pane" id="tab_meta">
+										<div class="form-body">
+											<div class="col-md-1"></div>
+											<div class="col-md-10">
+												<div class="form-group">
+													<label class="control-label col-md-3">CompanyName <span class="required" aria-required="true"> * </span> </label>
+													<div class="col-md-9">
+														<input type="text" name="company" placeholder="Cadric Info Solutions PvtLtd" class="form-control">
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Location <span class="required" aria-required="true"> * </span> </label>
+													<div class="col-sm-3">
+													  <input type="text" class="form-control" name="city" placeholder="Mexico">
+													</div>
+													<div class="col-sm-3">
+													  <input type="text" class="form-control" name="state" placeholder="Mexico">
+													</div>
+													<div class="col-sm-3">
+													  <input class="form-control" name="country" placeholder="USA">
+													</div>
+												</div>
+												<div class="form-group">
+												   <label class="control-label col-md-3">PhoneNumber </label>
+												   <div class="col-sm-9">
+													  <input type="text" class="form-control" name="phonenumber" placeholder="123-456-789">
+												   </div>
+												</div>
+												<div class="form-actions">
+													<div class="row">
+														<div class="col-sm-offset-3 col-sm-9">
+															<button type="submit" class="btn btn btn-primary">Save</button>
+															<button type="button" class="btn default pull-right">Cancel</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-1"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
-			<div class="col-sm-1"></div>
 		</div>
 	</div>
 </div>
@@ -144,7 +208,7 @@
 <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-<!-- <script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script> -->
+<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script> 
 <script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
 <script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script> 

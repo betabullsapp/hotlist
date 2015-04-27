@@ -101,8 +101,7 @@
         '<h3 class="popover-title"></h3>' +
         '<div class="popover-content text-center">'+
           '<div class="btn-group">'+
-            '<a class="btn" data-apply="confirmation"></a>'+
-            '<a class="btn" data-dismiss="confirmation"></a>'+
+            
           '</div>'+
         '</div>'+
       '</div>'

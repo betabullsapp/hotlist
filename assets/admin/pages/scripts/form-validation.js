@@ -75,6 +75,9 @@ var FormValidation = function () {
 					suitablejobtitle: {
 						required: true
 					},
+					company: {
+						required:true
+					},
                     select_multi: {
                         required: true,
                         minlength: 1,
