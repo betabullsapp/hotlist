@@ -96,82 +96,110 @@
 			<div class="row">
 				<div class="col-sm-2" ></div>
 				<div class="col-sm-8">
-					<h4> <span> Post a Job Details </span> </h4>
-					<hr/>
-					<div class="col-sm-12">
-						<div class="col-sm-0"></div>
-						<div class="col-sm-12">
-						
-							<form action="#" id="form_sample_1" class="form-horizontal">
-								
-								<div class="form-group">
-									<label class="control-label col-md-3">JobTitle <span class="required"> * </span> </label>
-									<div class="col-md-9">
-										<input type="text" name="jobtitle" placeholder="JobTitle"  class="form-control"/>
-									</div>
-								</div>
-				
-								<div class="form-group">
-									<label class="control-label col-md-3">Skills <span class="required"> * </span> </label>
-									<div class="col-md-9">
-										<input type="text" name="skills" placeholder="Skills" class="form-control"/>
-									</div>
-								</div>
-								
-								<div class="form-group">
-									<label class="control-label col-md-3">Location <span class="required"> * </span> </label>
-									<div class="col-sm-3">
-									  <input type="text" class="form-control" name="city"  placeholder="City">
-									</div>
-									<div class="col-sm-3">
-									  <input type="text" class="form-control" name="state"  placeholder="State">
-									</div>
-									<div class="col-sm-3">
-									  <input class="form-control" name="country" placeholder="Country">
-									</div>
-								</div>			
-								
-								<div class="form-group">
-								   <label class="control-label col-md-3">Duration <span class="required"> * </span> </label>
-								   <div class="col-sm-9">
-								      <input type="text" class="form-control" name="duration" placeholder="In Months">
-								   </div>
-							    </div>		
-
-								<div class="form-group">
-									<label class="control-label col-md-3">Job Description <span class="required"> * </span> </label>
-									<div class="col-sm-9">
-									  <textarea class="form-control" name="jobdesc" placeholder="Job Description"></textarea>
-									</div>
-							    </div>	
+					<div class="comment-tabs">
+						<ul class="nav nav-tabs">
+							<li><a href="recruiters.html"><img src="assets/img/logo.png" style="width:150px"></a></li>
+							<li><a href="rec-candidates.html"><h4 style="font-size:15px" class="reviews text-capitalize">Candidates</h4></a></li>
+							<li class="active"><a href="recruiters.html"><h4 style="font-size:15px" class="reviews text-capitalize">Jobs</h4></a></li>
 							
-								<div class="form-group">
-									<label class="control-label col-md-3">Industry  </label>
-									<div class="col-sm-9">
-									  <input class="form-control" name="industry"  placeholder="Industry">
+							<ul class="nav navbar-nav navbar-right sm">
+								<form class="navbar-form navbar-left" role="search">
+									<div class="form-group">
+									  <input type="text" class="form-control" placeholder="Search Jobs ...">
 									</div>
-							    </div>
+									<button type="submit" class="btn btn-default">Search</button>
+								</form>
+								<!-- <form class="navbar-form navbar-left">
+									<li ><a href="postjob.html" ><h4 style="font-size:15px" class="reviews text-capitalize">Post Job</h4></a></li>
+									
+								</form> -->
 								
-								<div class="form-group">
-									<label class="control-label col-md-3">Minimum Experience  </label>
-									<div class="col-sm-9">
-									  <input class="form-control" name="minexp" placeholder="In Years">
-									</div>
-							    </div>
-								
-								<div class="form-actions">
-									<div class="row">
-										<div class="col-sm-offset-3 col-sm-9">
-											<button type="submit" class="btn btn btn-primary">Submit</button>
-											<button type="button" class="btn default pull-right">Cancel</button>
+							</ul>
+						</ul> 
+						<div style="height:20px"></div>
+						<div class="portlet-body">
+							<h4> <span> Post a Job Details </span> 
+								<!-- <span class="pull-right"> <a href="postjob.html" > <span> Post Another Job </span> </a> <span> &nbsp or &nbsp</span> <a href="matchprofiles.html"> <span> View Matching Profiles </span> </a> </span> -->
+							</h4>
+							<hr/>
+							<div class="col-sm-12">
+							<div class="col-sm-0"></div>
+							<div class="col-sm-12">
+							
+								<form action="#" id="form_sample_1" class="form-horizontal">
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">JobTitle <span class="required"> * </span> </label>
+										<div class="col-md-9">
+											<input type="text" name="jobtitle" placeholder="JobTitle"  class="form-control"/>
 										</div>
 									</div>
-								</div>
-							</form>
-											
+					
+									<div class="form-group">
+										<label class="control-label col-md-3">Skills <span class="required"> * </span> </label>
+										<div class="col-md-9">
+											<input type="text" name="skills" placeholder="Skills" class="form-control"/>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">Location <span class="required"> * </span> </label>
+										<div class="col-sm-3">
+										  <input type="text" class="form-control" name="city"  placeholder="City">
+										</div>
+										<div class="col-sm-3">
+										  <input type="text" class="form-control" name="state"  placeholder="State">
+										</div>
+										<div class="col-sm-3">
+										  <input class="form-control" name="country" placeholder="Country">
+										</div>
+									</div>			
+									
+									<div class="form-group">
+									   <label class="control-label col-md-3">Duration <span class="required"> * </span> </label>
+									   <div class="col-sm-9">
+										  <input type="text" class="form-control" name="duration" placeholder="In Months">
+									   </div>
+									</div>		
+
+									<div class="form-group">
+										<label class="control-label col-md-3">Job Description <span class="required"> * </span> </label>
+										<div class="col-sm-9">
+										  <textarea class="form-control" name="jobdesc" placeholder="Job Description"></textarea>
+										</div>
+									</div>	
+								
+									<div class="form-group">
+										<label class="control-label col-md-3">Industry  </label>
+										<div class="col-sm-9">
+										  <input class="form-control" name="industry"  placeholder="Industry">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">Minimum Experience  </label>
+										<div class="col-sm-9">
+										  <input class="form-control" name="minexp" placeholder="In Years">
+										</div>
+									</div>
+									
+									<div class="form-actions">
+										<div class="row">
+											<div class="col-sm-offset-3 col-sm-9">
+												<button type="submit" class="btn btn btn-primary">Submit</button>
+												<button type="button" class="btn default pull-right">Cancel</button>
+											</div>
+										</div>
+									</div>
+								</form>
+												
+							</div>
+							<div class="col-sm-0"></div>
 						</div>
-						<div class="col-sm-0"></div>
 					</div>
+				</div>
+					
+					
 				</div>
 				
 				<div class="col-sm-2"></div>
@@ -183,7 +211,7 @@
 		
 	</div>
 </div>
-
+<div style="height:20px"></div>
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
  <div id="footer"></div>
