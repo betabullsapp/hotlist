@@ -31,6 +31,17 @@
 	.page-content {
 		min-height:588px !important;
 	}
+	
+	.panel-heading a:after {
+		font-family:'Glyphicons Halflings';
+		content:"\e114";
+		float: right;
+		color: grey;
+	}
+	.panel-heading a.collapsed:after {
+		content:"\e080";
+	}
+
 </style> 
 </head>
 
@@ -109,36 +120,68 @@
 			<div class="row">
 				<div class="col-sm-1" ></div>
 				<div class="col-md-2">
-					<h4> Years of Experience </h4>
-					<hr style="margin:0 0">
-					<div class="form-group">
-						<h6> <a href="" ><input type="checkbox" > 1-2 years </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > Less than 1 year </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > 3-5 years </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > More than 5 years </a> </h6>
+					<div  id="accordion" >
+    
+						<div >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapseOne" 
+									   href="#collapseOne" >
+									  <b style="font-weight:500">Years of Exp</b>
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in">
+								<div class="panel-body" style="padding:0px 15px;">
+									<h6> <a href="">1-2 years </a> </h6>
+									<h6> <a href="">Less than 1 year </a> </h6>
+									<h6> <a href="">2-5 years </a> </h6>
+									<h6> <a href="">More than 5 years </a> </h6>
+									<h6> <a href="">more <i class=""> </i> </a> </h6>
+								</div>
+							</div>
+						</div>
+						<div >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapseTwo"
+									   href="#collapseTwo" class="collapsed">
+									  <b style="font-weight:500">Companies</b>
+									</a>
+								</h4>
+
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse">
+								<div class="panel-body" style="padding:0px 15px;">
+									<h6> <a href="">BetaBulls </a> </h6>
+									<h6> <a href="">Google </a> </h6>
+									<h6> <a href="">TCS </a> </h6>
+									<h6> <a href="">HCL Technologies </a> </h6>
+									<h6> <a href="">more <i class=""> </i> </a> </h6>
+								</div>
+							</div>
+						</div>
 						
-						
-					</div>
-					
-					<h4> Companies </h4>
-					<hr style="margin:0 0">
-					<div class="form-group">
-						<h6> <a href="" ><input type="checkbox" > BetaBulls </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > Cognizant Technologies </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > TCS </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > Polarise </a> </h6>
-						
-						
-					</div>
-					
-					<h4> Locations </h4>
-					<hr style="margin:0 0">
-					<div class="form-group">
-						<h6> <a href="" ><input type="checkbox" > Mexico, USA </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > NewJersy, USA </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > NewYork, USA </a> </h6>
-						<h6> <a href="" ><input type="checkbox" > Washington, USA</a> </h6>
-						
+						<div >
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapseThree"
+									   href="#collapseThree" class="collapsed">
+									  <b style="font-weight:500">Locations</b>
+									</a>
+								</h4>
+
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse">
+								<div class="panel-body" style="padding:0px 15px;">
+									<h6> <a href="">Mexico, USA </a> </h6>
+									<h6> <a href="">NewJersy, USA </a> </h6>
+									<h6> <a href="">NewYork, USA </a> </h6>
+									<h6> <a href="">Washington, USA </a> </h6>
+									<h6> <a href="">more <i class=""> </i> </a> </h6>
+								</div>
+							</div>
+						</div>
 						
 					</div>
 				</div>
