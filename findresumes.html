@@ -137,7 +137,15 @@
 									<h6> <a href="">Less than 1 year </a> </h6>
 									<h6> <a href="">2-5 years </a> </h6>
 									<h6> <a href="">More than 5 years </a> </h6>
-									<h6> <a href="">more <i class=""> </i> </a> </h6>
+									<!-- <h6> <a href="">more <i class="fa fa-angle-double-right"> </i> </a> </h6>
+									
+									<div class="hidedetails" style="display:none">
+										<h6> <a href="">Cognizant </a> </h6>
+										<h6> <a href="">Wipro Technologies </a> </h6>
+										<h6> <a href="">Infosys </a> </h6>
+										<h6> <a href="">HSBC </a> </h6>
+									</div> -->
+									
 								</div>
 							</div>
 						</div>
@@ -157,7 +165,15 @@
 									<h6> <a href="">Google </a> </h6>
 									<h6> <a href="">TCS </a> </h6>
 									<h6> <a href="">HCL Technologies </a> </h6>
-									<h6> <a href="">more <i class=""> </i> </a> </h6>
+									<h6> <a href="#collapseTwo" class="show1">more <i class="fa fa-angle-double-right"> </i> </a> </h6>
+									
+									<div class="companydetails" style="display:none">
+										<h6> <a href="">Cognizant </a> </h6>
+										<h6> <a href="">Wipro Technologies </a> </h6>
+										<h6> <a href="">Infosys </a> </h6>
+										<h6> <a href="">HSBC </a> </h6>
+									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -178,7 +194,15 @@
 									<h6> <a href="">NewJersy, USA </a> </h6>
 									<h6> <a href="">NewYork, USA </a> </h6>
 									<h6> <a href="">Washington, USA </a> </h6>
-									<h6> <a href="">more <i class=""> </i> </a> </h6>
+									<h6> <a href="#collapseThree" class="show2">more <i class="fa fa-angle-double-right"> </i> </a> </h6>
+									
+									<div class="countrydetails" style="display:none">
+										<h6> <a href="">Mumbai, India </a> </h6>
+										<h6> <a href="">Chennai, India </a> </h6>
+										<h6> <a href="">Vizag, India </a> </h6>
+										<h6> <a href="">Hyderabad, India </a> </h6>
+									</div>
+									
 								</div>
 							</div>
 						</div>
@@ -273,6 +297,22 @@ QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
       });
    </script>
+   
+<script>
+$(document).ready(function(){
+    
+    $(".show1").click(function(){
+        $(".companydetails").show();
+         $(".show1").remove();
+    });
+	$(".show2").click(function(){
+        $(".countrydetails").show();
+         $(".show2").remove();
+    });
+	
+});
+</script> 
+   
    <script> 
 $(function(){
   $("#header").load("http://betabullsapp.github.io/hotlist/header.html"); 
