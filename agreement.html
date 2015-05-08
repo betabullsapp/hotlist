@@ -31,6 +31,18 @@
 	.page-content {
 		min-height:588px !important;
 	}
+	
+	.panel-heading a:after {
+		font-family:'Glyphicons Halflings';
+		content:"\e114";
+		float: right;
+		padding:2px 35px 0 0px;
+		color: grey;
+	}
+	.panel-heading a.collapsed:after {
+		content:"\e080";
+	}
+
 </style> 
 </head>
 
@@ -50,21 +62,14 @@
         <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav sm" >
-              <li ><a href="index.html">Find Resumes</a></li>
-              <li class="active"><a href="recruiters.html">Recruiters / Post Your Hotlist</a></li>
+              <li class="active"><a href="index.html">Find Resumes</a></li>
+              <li><a href="rec-candidates.html">Recruiters / Post Your Hot List</a></li>
                              
             </ul>
             <!-- Right nav -->
-            <ul class="nav navbar-nav navbar-right sm" >
+            <ul class="nav navbar-nav navbar-right sm">
               
-			    <li class="dropdown active">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu" style="box-shadow:none">
-					
-					<li><a href="editrecruiter.html">MyProfile</a></li>
-					<li><a href="index.html">Logout</a></li>
-				  </ul>
-				</li>
+			  <li><a href="login.html">Sign In</a></li>
                           
             </ul>
           
@@ -77,127 +82,19 @@
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<div class="page-content">
-		<div style="height:25px"></div>
-	    <div class="col-sm-12">
-			<div class="col-sm-1"></div>
-			<div class="col-sm-10" >
-				<div class="comment-tabs">
-					<ul class="nav nav-tabs" >
-						<li><img src="assets/img/logo.png" style="width:150px;padding:10px 0"/></li>
-						<li class="active" style="margin-bottom:-2px"><a href="rec-candidates.html" > <h4 style="font-size:15px" class="reviews text-capitalize"> My Candidates</h4></a></li>
-						<li style="margin-bottom:-2px"><a href="recruiters.html" ><h4 style="font-size:15px" class="reviews text-capitalize"> My Jobs</h4></a></li>
-						<li style="margin-bottom:-2px"><a href="request-profiles.html" ><h4 style="font-size:15px" class="reviews text-capitalize"> Requested Profiles</h4></a></li>
-						<li style="margin-bottom:-2px"><a href="applied-jobs.html" ><h4 style="font-size:15px" class="reviews text-capitalize"> Applied Jobs</h4></a></li>
-						
-						<ul class="nav navbar-nav navbar-right sm" >
-							<form class="navbar-form navbar-left" role="search">
-								<div class="form-group">
-								  <input type="text" class="form-control" placeholder="Search Candidates ...">
-								</div>
-								<button type="submit" class="btn btn-default">Search</button>
-							</form>
-							<!-- <form class="navbar-form navbar-left">
-								<li ><a href="postjob.html" ><h4 style="font-size:15px" class="reviews text-capitalize">Post Job</h4></a></li>
-								
-							</form> -->
-              				
-              			</ul>
-					</ul> 
-										
-					<!--div class="tab-content">
-						<div class="tab-pane active" id="comments-jobs">                
-							
-						</div>
-						<div class="tab-pane" id="comments-candidates">
-							
-						</div>
-						
-					</div-->
-					<div class="page-toolbar pull-right">
-						<a href="addcandidate.html"> <h4>  Add Candidate </h4> </a>
-					</div>
-					
-					<div class="portlet-body">
-						<div class="table-scrollable" style="border:none;border-bottom:3px solid #dddddd">
-							<table class="table table-advance table-hover">
-								<thead>
-									<tr>
-										<th>
-											 #
-										</th>
-										<th>
-											 Tagline
-										</th>
-										<th>
-											 Location
-										</th>
-										<th>
-											 Available Date
-										</th>
-										
-										<th>
-											 Status
-										</th>
-										<th>
-											 
-										</th>
-										
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											 1
-										</td>
-										<td>
-											 Java Developer
-										</td>
-										<td>
-											 Mexico, Mexico, USA
-										</td>
-										<td>
-											 24Jan, 2015
-										</td>
-										<td>
-											available
-										</td>
-										<td>
-											<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none"> <i title="view matching jobs" class="glyphicon glyphicon-briefcase"></i> </a> </span>
-										</td>
-										
-									</tr>
-									<tr>
-										<td>
-											 2
-										</td>
-										<td>
-											 Product Engineer
-										</td>
-										<td>
-											 NewJersey, USA
-										</td>
-										<td>
-											 2July, 2015
-										</td>
-										<td>
-											available
-										</td>
-										<td>
-											<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none"> <i title="view matching jobs" class="glyphicon glyphicon-briefcase"></i> </a> </span>
-										</td>
-									</tr>
-									
-								</tbody>
-							</table>
-						</div>
-					</div>
-					
-				</div>
+		<div style="height:20px"></div>
+		<div class="col-md-12">
+			<div class="col-md-2"></div>
+			
+			<div class="col-md-8">
+				<h4> <a href="#" class="pull-right">  <b> Release Now </b>  </a> </h4>
 			</div>
-			<div class="col-sm-1"></div>
+			
+			<div class="col-md-2"></div>
 		</div>
 	</div>
 </div>
+
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div id="footer"></div>
@@ -221,15 +118,13 @@
 <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-<!-- <script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script> -->
+<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
 <script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
 <script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
-<script> 
-$(function(){
-  $("#header").load("http://betabullsapp.github.io/hotlist/header.html"); 
-  $("#footer").load("http://betabullsapp.github.io/hotlist/footer.html"); 
-});
-</script> 
+<script src="assets/global/plugins/bootstrap-confirmation/bootstrap-confirmation.min.js" type="text/javascript"></script>
+<script src="assets/admin/pages/scripts/ui-confirmations.js"></script>
+
+
 <script>
       jQuery(document).ready(function() {    
          Metronic.init(); // init metronic core components
@@ -238,6 +133,28 @@ QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
       });
    </script>
+   
+<script>
+$(document).ready(function(){
+    
+    $(".show1").click(function(){
+        $(".companydetails").show();
+         $(".show1").remove();
+    });
+	$(".show2").click(function(){
+        $(".countrydetails").show();
+         $(".show2").remove();
+    });
+	
+});
+</script> 
+   
+   <script> 
+$(function(){
+  $("#header").load("http://betabullsapp.github.io/hotlist/header.html"); 
+  $("#footer").load("http://betabullsapp.github.io/hotlist/footer.html"); 
+});
+</script> 
 <!-- END JAVASCRIPTS -->
 </body>
 <!-- END BODY -->
