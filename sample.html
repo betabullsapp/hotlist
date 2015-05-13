@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Hot List</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+ 
+</head>
+
+<body class="page-header-fixed page-quick-sidebar-over-content" style="background-color:white">
+<!-- BEGIN HEADER -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a href="index.html"><img src="assets/img/logo.png" style="width:150px" /></a> -->
+        </div>
+        <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav sm" >
+              <li ><a href="index.html">Find Resumes</a></li>
+              <li class="active"><a href="rec-candidates.html">Recruiters / Post Your Hot List</a></li>
+                             
+            </ul>
+            <!-- Right nav -->
+            <ul class="nav navbar-nav navbar-right sm" >
+              
+			    <li class="dropdown active">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">admin <span class="caret"></span></a>
+				  <ul class="dropdown-menu" role="menu" style="box-shadow:none">
+					
+					<li><a href="editrecruiter.html">MyProfile</a></li>
+					<li><a href="index.html">Logout</a></li>
+				  </ul>
+				</li>
+                          
+            </ul>
+          
+        </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div>
+
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<div class="row footer" style="margin:10px 0;min-height:568px">
+		
+		<div class="col-md-12">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h3> to-do's </h3>
+				<h4> <a href="requests-todo.html"> You have requests for your candidates </a> </h4>
+				<h4> <a href="candidates-todo.html"> Sign NCA for requested candidates </a> </h4>
+				<div style="height:10px"></div>
+				<form class="form-horizontal form-row-seperated" action="#">
+					<div class="portlet">
+						<div class="portlet-body">
+							<div class="tabbable">
+								<ul class="nav nav-tabs">
+									<li class="">
+										<img src="assets/img/logo.png" style="width:150px">
+									</li>
+									<li class="active">
+										<a href="#tab_candidates" data-toggle="tab" aria-expanded="true">
+										My Candidates </a>
+									</li>
+									<li class="">
+										<a href="#tab_jobs" data-toggle="tab" aria-expanded="false">
+										My Jobs </a>
+									</li>
+									<li class="">
+										<a href="#tab_profiles" data-toggle="tab" aria-expanded="false">
+										Requested Profiles </a>
+									</li>
+									<li class="">
+										<a href="#tab_appliedjobs" data-toggle="tab" aria-expanded="false">
+										Applied Jobs </a>
+									</li>
+									<form action="#" class="alert alert-danger alert-borderless">
+											<div class="input-group pull-right" style="width:30%">
+												<div class="input-cont">
+													<input type="text" placeholder="Search..." class="form-control">
+												</div>
+												<span class="input-group-btn">
+												<button type="button" class="btn green-haze">
+												Search &nbsp; <i class="m-icon-swapright m-icon-white"></i>
+												</button>
+												</span>
+											</div>
+										</form>
+										
+									
+								</ul>
+								
+								<div class="tab-content no-space">
+									<div class="tab-pane active" id="tab_candidates">
+										<div class="page-toolbar pull-right">
+											<a href="#addcandidate" data-toggle="tab" aria-expanded="false"> <h4>  Add Candidate </h4> </a>
+										</div>
+										<div class="portlet-body">
+											<div class="table-scrollable" style="border:none;border-bottom:3px solid #dddddd">
+												<table class="table table-advance table-hover">
+													<thead>
+														<tr>
+															<th>
+																 #
+															</th>
+															<th>
+																 Tagline
+															</th>
+															<th>
+																 Location
+															</th>
+															<th>
+																 Available Date
+															</th>
+															
+															<th>
+																 Status
+															</th>
+															<th>
+																 
+															</th>
+															
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																 1
+															</td>
+															<td>
+																 Java Developer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															<td>
+																No Job
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none"> <i title="view matching jobs" class="glyphicon glyphicon-briefcase"></i> </a> </span>
+															</td>
+															
+														</tr>
+														<tr>
+															<td>
+																 2
+															</td>
+															<td>
+																 Product Engineer
+															</td>
+															<td>
+																 NewJersey, USA
+															</td>
+															<td>
+																 2July, 2015
+															</td>
+															<td>
+																<a href="candidate-requeststatus.html"> Requested </a>
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none"> <i title="view matching jobs" class="glyphicon glyphicon-briefcase"></i> </a> </span>
+															</td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="addcandidate">
+										
+									</div>
+									
+									<div class="tab-pane" id="postjob">
+										
+									</div>
+									
+									<div class="tab-pane" id="tab_jobs">
+										<div class="page-toolbar pull-right">
+											<a href="#postjob" data-toggle="tab" aria-expanded="false"> <h4>  Post Job </h4> </a>
+										</div>
+										<div class="portlet-body">
+											<div class="table-scrollable" style="border:none;border-bottom:3px solid #dddddd">
+												<table class="table table-advance table-hover">
+													<thead>
+														<tr>
+															<th>
+																 #
+															</th>
+															<th>
+																 Job
+															</th>
+															<th>
+																 Location
+															</th>
+															<th>
+																 Post Date
+															</th>
+															<th>
+																 
+															</th>
+															<th>
+																 Edit
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																 1
+															</td>
+															<td>
+																 Java Developer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															<td>
+																
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchprofiles.html" style="text-decoration:none"> <i title="view matching profiles" class="glyphicon glyphicon-user"></i> </a> </span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 2
+															</td>
+															<td>
+																 IOS Developer
+															</td>
+															<td>
+																 Newjersy, USA
+															</td>
+															<td>
+																 5Nov, 2015
+															</td>
+															<td>
+																
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="edit job details" class="glyphicon glyphicon-edit"></i> </a> <a href="" style="text-decoration:none"> <i title="permenantly delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchprofiles.html" style="text-decoration:none"> <i title="view matching profiles" class="glyphicon glyphicon-user"></i> </a> </span>
+															</td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="tab_profiles">
+										<div style="height:10px"></div>
+										<div class="portlet-body">
+											<div class="table-scrollable" style="border:none;border-bottom:3px solid #dddddd">
+												<table class="table table-advance table-hover">
+													<thead>
+														<tr>
+															<th>
+																 #
+															</th>
+															<th>
+																 Tagline
+															</th>
+															<th>
+																 Location
+															</th>
+															<th>
+																Date 
+															</th>
+															<th>
+																 Status
+															</th>
+															<th>
+																Actions 
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																 1
+															</td>
+															<td>
+																 Java Developer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															
+															<td>
+																Requested
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none">  </a> </span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 2
+															</td>
+															<td>
+																 IOS Developer
+															</td>
+															<td>
+																 Newjersy, USA
+															</td>
+															<td>
+																 5Nov, 2015
+															</td>
+															
+															<td>
+																Signed NCA
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="Delete" class="glyphicon glyphicon-trash"></i> </a> <a style="text-decoration:none" href="requestresume.html"> <i class="glyphicon glyphicon-eye-open" title="View Full Profile"> </i> </a> </span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 3
+															</td>
+															<td>
+																 Testing
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															
+															<td>
+																Available
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none">  </a> </span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 4
+															</td>
+															<td>
+																 .NET Developer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															
+															<td>
+																Not Available
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none">  </a> </span>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 5
+															</td>
+															<td>
+																 Designer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															
+															<td>
+																Requested
+															</td>
+															<td>
+																<span style="letter-spacing:5px"> <a href="" style="text-decoration:none"> <i title="delete" class="glyphicon glyphicon-trash"></i> </a> <a href="matchjobs.html" style="text-decoration:none">  </a> </span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+									<div class="tab-pane" id="tab_appliedjobs">
+										<div style="height:10px"></div>
+										<div class="portlet-body">
+											<div class="table-scrollable" style="border:none;border-bottom:3px solid #dddddd">
+												<table class="table table-advance table-hover">
+													<thead>
+														<tr>
+															<th>
+																 #
+															</th>
+															<th>
+																 Job Title
+															</th>
+															<th>
+																Location 
+															</th>
+															<th>
+																 Date
+															</th>
+															<th>
+																 
+															</th>
+															<th>
+																Status 
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>
+																 1
+															</td>
+															<td>
+																 Java Developer
+															</td>
+															<td>
+																 Mexico, Mexico, USA
+															</td>
+															<td>
+																 24Jan, 2015
+															</td>
+															<td>
+																
+															</td>
+															<td>
+																Open
+															</td>
+														</tr>
+														<tr>
+															<td>
+																 2
+															</td>
+															<td>
+																 IOS Developer
+															</td>
+															<td>
+																 Newjersy, USA
+															</td>
+															<td>
+																 5Nov, 2015
+															</td>
+															<td>
+																
+															</td>
+															<td>
+																Open
+															</td>
+														</tr>
+														
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div id="footer"></div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script> 
+<script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script> 
+$(function(){
+  $("#header").load("http://betabullsapp.github.io/hotlist/header.html"); 
+  $("#footer").load("http://betabullsapp.github.io/hotlist/footer.html"); 
+});
+</script> 
+<script>
+      jQuery(document).ready(function() {    
+         Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+      });
+   </script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>
