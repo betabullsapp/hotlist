@@ -27,7 +27,11 @@
 <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
 <!-- END THEME STYLES -->
 <link rel="shortcut icon" href="favicon.ico"/>
-
+ <style>
+.page-content {
+	min-height:568px !important;
+}
+</style> 
 </head>
 
 <body class="page-header-fixed page-quick-sidebar-over-content" style="background-color:white !important">
@@ -63,9 +67,12 @@
 				</li>
                           
             </ul>
-          
+          <!-- login -->
         </div><!--/.nav-collapse -->
     </div><!--/.container -->
+</div>
+
+<div class="clearfix">
 </div>
 
 <div class="clearfix">
@@ -73,16 +80,29 @@
 <!-- BEGIN CONTAINER -->
 <div class="page-container">
 	<div class="page-content">
+		
 		<div class="col-sm-12">
-			<div style="height:16px"></div>
-			<div class="row">
-				<div class="col-sm-2" ></div>
+			
+			<!-- <div class="row">
+				<div class="col-sm-1"></div>
 				<div class="col-sm-8">
+					<img src="assets/img/logo.png" style="width:200px"></img>
+				</div>
+				<div class="col-sm-2"></div>
+			</div> -->
+			
+			<div style="height:16px"></div>
+			
+			<div class="row">
+				<div class="col-sm-1" ></div>
+				<div class="col-sm-10">
 					<div class="comment-tabs">
 						<!-- <ul class="nav nav-tabs">
 							<li><img src="assets/img/logo.png" style="width:150px;padding:10px 0"></li>
-							<li class="active"><a href="rec-candidates.html"><h4 style="font-size:15px" class="reviews text-capitalize">Candidates</h4></a></li>
-							<li ><a href="recruiters.html"><h4 style="font-size:15px" class="reviews text-capitalize">Jobs</h4></a></li>
+							<li><a href="rec-candidates.html"><h4 style="font-size:15px" class="reviews text-capitalize">Candidates</h4></a></li>
+							<li class="active"><a href="recruiters.html"><h4 style="font-size:15px" class="reviews text-capitalize">Jobs</h4></a></li>
+							<li style="margin-bottom:-2px"><a href="request-profiles.html" ><h4 style="font-size:15px" class="reviews text-capitalize"> Requested Profiles</h4></a></li>
+						<li style="margin-bottom:-2px"><a href="applied-jobs.html" ><h4 style="font-size:15px" class="reviews text-capitalize"> Applied Jobs</h4></a></li>
 							<ul class="nav navbar-nav navbar-right sm">
 								<form class="navbar-form navbar-left" role="search">
 									<div class="form-group">
@@ -92,139 +112,107 @@
 								</form>
 								
 								
-							</ul> -->
-						</ul> 
-						<div style="height:2px"></div>
+							</ul>
+						</ul>  -->
+						<div style="height:20px"></div>
 						<div class="portlet-body">
-							<h4> <span> Edit Candidate Details </span> 
-								<!-- <span class="pull-right"> <a href="addcandidate.html" > <span> Add Another Candidate </span> </a> <span> &nbsp or &nbsp</span> <a href="matchjobs.html"> <span> View Matching Jobs </span> </a> </span>  -->
-							</h4>
-							<hr/>
+							
 							<div class="col-sm-12">
-								<div class="col-sm-0"></div>
-								<div class="col-sm-12">
-									<form action="#" id="form_sample_1" class="form-horizontal">
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">FirstName  </label>
-											<div class="col-md-9">
-												<input type="text" name="firstname" placeholder="Johnson"  class="form-control"/>
-											</div>
-										</div>
-						
-										<div class="form-group">
-											<label class="control-label col-md-3">LastName  </label>
-											<div class="col-md-9">
-												<input type="text" name="lastname" placeholder="J" class="form-control"/>
-											</div>
-										</div>
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">Current JobTitles <span class="required"> * </span> </label>
-											<div class="col-md-9">
-												<input type="text" name="jobtitle" placeholder="Java Developer with 1+" class="form-control"/>
-											</div>
-										</div>
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">Suitable JobTitles <span class="required"> * </span> </label>
-											<div class="col-md-9">
-												<input type="text" name="suitablejobtitle" placeholder="Java Developer With 1+" class="form-control"/>
-											</div>
-										</div>
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">Location </label>
-											<div class="col-sm-3">
-											  <input type="text" class="form-control" name="city1"  placeholder="NewJersy">
-											</div>
-											<div class="col-sm-3">
-											  <input type="text" class="form-control" name="state1"  placeholder="NewJersy">
-											</div>
-											<div class="col-sm-3">
-											  <input class="form-control" name="country1" placeholder="USA">
-											</div>
-										</div>	
-										
-										<div class="form-group">
-										   <label class="control-label col-md-3">ZipCode  </label>
-										   <div class="col-sm-9">
-											  <input type="text" class="form-control" name="zipcode" placeholder="ZipCode">
-										   </div>
-										</div>
-										
-										<div class="form-group">
-										   <label class="control-label col-md-3">Job Locations  </label>
-										   <div class="col-sm-9">
-											  <input type="text" class="form-control" name="location" placeholder="USA">
-										   </div>
-										</div>		
-
-										<div class="form-group">
-											<label class="control-label col-md-3">Skills <span class="required"> * </span> </label>
-											<div class="col-md-9">
-												<input type="text" name="skills" placeholder="JAVA, JSP and ElasticSearch etc...." class="form-control"/>
-											</div>
-										</div>
+							<div class="col-sm-1"></div>
+							<div class="col-sm-10">
+								<h4> <span> Post a Job Details </span> 
+									<!-- <span class="pull-right"> <a href="postjob.html" > <span> Post Another Job </span> </a> <span> &nbsp or &nbsp</span> <a href="matchprofiles.html"> <span> View Matching Profiles </span> </a> </span> -->
+								</h4>
+								<hr/>
+								<form action="#" id="form_sample_1" class="form-horizontal">
 									
-										<div class="form-group">
-											<label class="control-label col-md-3">Experience  </label>
-											<div class="col-sm-9">
-											  <input class="form-control" name="experience"  placeholder="3 Years">
+									<div class="form-group">
+										<label class="control-label col-md-3">JobTitle <span class="required"> * </span> </label>
+										<div class="col-md-9">
+											<input type="text" name="jobtitle" placeholder="Java Developer"  class="form-control"/>
+										</div>
+									</div>
+					
+									<div class="form-group">
+										<label class="control-label col-md-3">Skills <span class="required"> * </span> </label>
+										<div class="col-md-9">
+											<input type="text" name="skills" placeholder="JAVA/J2EE,JSP,Servlets and Elastic Search" class="form-control"/>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">Location <span class="required"> * </span> </label>
+										<div class="col-sm-3">
+										  <input type="text" class="form-control" name="city"  placeholder="NewJersy">
+										</div>
+										<div class="col-sm-3">
+										  <input type="text" class="form-control" name="state"  placeholder="NewJersy">
+										</div>
+										<div class="col-sm-3">
+										  <input class="form-control" name="country" placeholder="USA">
+										</div>
+									</div>			
+									
+									<div class="form-group">
+									   <label class="control-label col-md-3">Duration <span class="required"> * </span> </label>
+									   <div class="col-sm-9">
+										  <input type="text" class="form-control" name="duration" placeholder="18 Months">
+									   </div>
+									</div>		
+
+									<div class="form-group">
+										<label class="control-label col-md-3">Job Description <span class="required"> * </span> </label>
+										<div class="col-sm-9">
+										  <textarea class="form-control" name="jobdesc" placeholder="Candidate having 3+ years of Experience."></textarea>
+										</div>
+									</div>	
+								
+									<div class="form-group">
+										<label class="control-label col-md-3">Industry  </label>
+										<div class="col-sm-9">
+										  <input class="form-control" name="industry"  placeholder="Software">
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">Minimum Experience  </label>
+										<div class="col-sm-9">
+										  <input class="form-control" name="minexp" placeholder="3 Years">
+										</div>
+									</div>
+									
+									<div class="form-actions">
+										<div class="row">
+											<div class="col-sm-offset-3 col-sm-9">
+												<button type="submit" class="btn btn btn-primary">Submit</button>
+												<button type="button" class="btn default pull-right">Cancel</button>
 											</div>
 										</div>
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">Tagline  </label>
-											<div class="col-sm-9">
-											  <input class="form-control" name="tagline"  placeholder="Expert Software Engineer">
-											</div>
-										</div>
-										
-										<div class="form-group">
-											<label class="control-label col-md-3">Industry Experience </label>
-											<div class="col-sm-9">
-											  <input class="form-control" name="indusexp" placeholder="3 Years">
-											</div>
-										</div>
-										
-										<div class="form-group">
-											<label for="inputEmail3" class="col-sm-3 control-label">Upload Latest Resume</label>
-											<div class="col-sm-9" style="padding-top:7px">
-											  <input type="file" id="exampleInputFile1">
-											</div>
-											
-										</div>
-										
-										<div class="form-actions">
-											<div class="row">
-												<div class="col-sm-offset-3 col-sm-9">
-													<button type="submit" class="btn btn btn-primary">Update</button>
-													<button type="button" class="btn default pull-right">Cancel</button>
-												</div>
-											</div>
-										</div>
-									</form>
-								</div>
-								<div class="col-sm-0"></div>
+									</div>
+								</form>
+												
 							</div>
+							<div class="col-sm-1"></div>
 						</div>
 					</div>
 				</div>
+					
+					
+				</div>
 				
-				<div class="col-sm-2"></div>
+				<div class="col-sm-1"></div>
 			</div>
-		</div>	
+			
 		
 			
 		</div>
 		
 	</div>
 </div>
-<!-- END CONTAINER -->
 <div style="height:20px"></div>
+<!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
- <div id="footer">
+ <div id="footer"></div>
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
@@ -257,7 +245,7 @@
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL STYLES -->
 <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+ <script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script> 
 <script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
 <script src="assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
 <script src="assets/admin/pages/scripts/form-validation.js"></script>
@@ -276,6 +264,13 @@ Layout.init(); // init current layout
 QuickSidebar.init(); // init quick sidebar
 Demo.init(); // init demo features
    FormValidation.init();
+});
+</script>
+  <script>
+$(document).ready(function(){
+	$('#postjob').click(function(){
+		window.location.replace("recruiters.html");
+	});
 });
 </script>
 <!-- END JAVASCRIPTS -->
