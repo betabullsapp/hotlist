@@ -18,6 +18,8 @@
 <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 <link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css"/>
+
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -154,7 +156,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -175,7 +177,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -196,7 +198,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -217,7 +219,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -238,7 +240,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -259,7 +261,7 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
 												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
@@ -280,8 +282,8 @@
 												 <i class="fa fa-pencil-square-o"> </i> &nbsp Signed NCA
 											</td>
 											<td>
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Share Resume" > <i class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
-												 <a href="#" data-toggle="tooltip" data-placement="right" title="Release Now"> <i class="fa fa-sign-out"> </i> Release Now </a>
+												 <a href=".basic" data-toggle="modal" > <i data-toggle="tooltip" data-placement="right" title="Share Resume" class="fa fa-share-alt"> </i> Share Resume </a> &nbsp &nbsp &nbsp
+												 <a href="#" > <i data-toggle="tooltip" data-placement="right" title="Release Now" class="fa fa-sign-out"> </i> Release Now </a>
 											</td>
 										</tr>
 										
@@ -302,6 +304,48 @@
 <!-- END CONTAINER -->
 <!-- BEGIN FOOTER -->
 <div id="footer"></div>
+
+<div class="modal fade basic"  tabindex="-1" role="basic" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+											<h4 class="modal-title">Share Resume</h4>
+										</div>
+										<div class="modal-body"  style="margin:10px 0 18px 0">
+											<div class="form-group" style="margin-bottom:30px;">
+												<label class="control-label col-md-3">Upload File</label>
+												<div class="col-md-9">
+													<div class="fileinput fileinput-new" data-provides="fileinput">
+														<div class="input-group input-large">
+															<div class="form-control uneditable-input input-fixed input-medium" data-trigger="fileinput">
+																<i class="fa fa-file fileinput-exists"></i>&nbsp; <span class="fileinput-filename"></span>
+															</div>
+															<span class="input-group-addon btn default btn-file">
+															<span class="fileinput-new">
+															Select file </span>
+															<span class="fileinput-exists">
+															Change </span>
+															<input type="hidden" value="" name="..."><input type="file" name="">
+															</span>
+															<a href="javascript:;" class="input-group-addon btn red fileinput-exists" data-dismiss="fileinput">
+															Remove </a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn default" data-dismiss="modal">Close</button>
+											<button type="button" class="btn blue">Share</button>
+										</div>
+									</div>
+									<!-- /.modal-content -->
+								</div>
+								<!-- /.modal-dialog -->
+							</div>
+
+
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
 <!-- BEGIN CORE PLUGINS -->
@@ -320,6 +364,8 @@
 <script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js"></script>
+
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
