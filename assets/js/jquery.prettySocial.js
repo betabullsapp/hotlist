@@ -40,6 +40,13 @@
                         height: 600
                     }
                 }
+				linkedin: {
+                    url: 'https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&summary={{description}}+&source={{via}}',
+                    popup: {
+                        width: 600,
+                        height: 600
+                    }
+                }
             },
 
             /**
